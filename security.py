@@ -1,14 +1,10 @@
 import os
 import time
 os.system("clear")
-print("Mr Killer Script ! @Mr_Killer_1\n")
-portt = input("Enter Your port from ssh : ")
-portp = input("Enter Your panel port(default : 8081) : ")
-#دیلیت کاربر نفوذی
-os.system("sudo killall -u f4cabs & deluser f4cabs")
-os.system("sudo killall -u s & deluser s")
-os.system("sudo killall -u meo092t & deluser meo092t")
-#فعالسازی فایروال
+print("Simple Abuse Security Fix for server by Ali Lafzi Ghazi\n")
+portt = input("Enter your ssh port: ")
+
+#Active ufw Firewall
 os.system("sudo ufw reset")
 time.sleep(4)
 os.system("ufw allow 80")
@@ -20,7 +16,7 @@ os.system("ufw allow"+" "+portp)
 os.system("ufw allow"+" "+portt)
 os.system("sudo ufw enable")
 time.sleep(4)
-#بستن رنج آیپی های خصوصی
+#Close Private IP Range
 """
 os.system("ufw deny out to 10.0.0.0/8")
 os.system("ufw deny out to 172.16.0.0/12")
@@ -39,4 +35,4 @@ time.sleep(5)
 os.system("clear") 
 print("End.....!")
 os.system("sudo apt install screen -y")
-os.system("screen python3 securityc.py ")
+os.system("screen python3 firewall.py ")
