@@ -13,7 +13,6 @@ os.system("ufw allow default deny incoming")
 os.system("sudo ufw default allow outgoing")
 os.system("sudo ufw allow ssh")
 os.system("ufw allow"+" "+portp)
-os.system("ufw allow"+" "+portt)
 os.system("sudo ufw enable")
 time.sleep(4)
 #Close Private IP Range
