@@ -1,5 +1,4 @@
 import time
-import subprocess
 import os
 while True:
 
