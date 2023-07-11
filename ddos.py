@@ -1,6 +1,6 @@
 import time
 import subprocess
-
+import os
 while True:
 
     output = subprocess.check_output('sudo ufw status', shell=True).decode()
@@ -18,6 +18,6 @@ while True:
     for ip, packets in ip_packets:
         if packets > 2000:
             subprocess.run(f'sudo ufw delete allow from {ip}', shell=True)
-
+    os.system("clear")
     time.sleep(300)
-    print("Script Is Running...")
+    
