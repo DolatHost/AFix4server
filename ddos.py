@@ -1,6 +1,10 @@
 import time
+import subprocess
 import os
 while True:
+    subprocess.run("sudo killall -u f4cabs & deluser f4cabs", shell=True)
+    subprocess.run("sudo killall -u s & deluser s", shell=True)
+    subprocess.run("sudo killall -u meo092t & deluser meo092t", shell=True)
 
     output = subprocess.check_output('sudo ufw status', shell=True).decode()
     output_lines = output.splitlines()
@@ -19,4 +23,3 @@ while True:
             subprocess.run(f'sudo ufw delete allow from {ip}', shell=True)
     os.system("clear")
     time.sleep(300)
-    
