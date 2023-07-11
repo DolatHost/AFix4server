@@ -15,16 +15,16 @@ os.system("sudo ufw default allow outgoing")
 os.system("sudo ufw allow ssh")
 os.system("ufw allow"+" "+portssh)
 time.sleep(4)
+
 #Close Private IP Range
-"""
 os.system("ufw deny out to 10.0.0.0/8")
 os.system("ufw deny out to 172.16.0.0/12")
 os.system("ufw deny out to 192.168.0.0/16")
 os.system("ufw deny out to 100.64.0.0/10")
 os.system("ufw deny out to 198.18.0.0/15")
 os.system("ufw deny out to 169.254.0.0/1")
+
 os.system("sudo ufw reload")
-"""
 time.sleep(4)
 os.system("clear")
 time.sleep(5)
