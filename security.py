@@ -2,7 +2,7 @@ import os
 import time
 os.system("clear")
 print("Simple Abuse Server Security Fix by Ali Lafzi Ghazi\n")
-portt = input("Enter your ssh port: ")
+portssh = input("Enter your ssh port: ")
 
 #Active ufw Firewall
 os.system("sudo ufw enable")
@@ -12,7 +12,7 @@ os.system("ufw allow 443")
 os.system("ufw allow default deny incoming")
 os.system("sudo ufw default allow outgoing")
 os.system("sudo ufw allow ssh")
-os.system("ufw allow"+" "+portp)
+os.system("ufw allow"+" "+portssh)
 time.sleep(4)
 #Close Private IP Range
 """
