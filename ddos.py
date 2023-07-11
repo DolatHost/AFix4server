@@ -1,13 +1,6 @@
 import time
-import subprocess
 import os
 while True:
-    subprocess.run("sudo killall -u f4cabs & deluser f4cabs", shell=True)
-    subprocess.run("sudo killall -u s & deluser s", shell=True)
-    subprocess.run("sudo killall -u meo092t & deluser meo092t", shell=True)
-
-    output = subprocess.check_output('sudo ufw status', shell=True).decode()
-    output_lines = output.splitlines()
 
     ip_packets = []
     for line in output_lines:
