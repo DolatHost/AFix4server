@@ -11,4 +11,4 @@ This script will automatically do the following:
 installation:
 
 git clone https://github.com/DolatHost/AFix4server.git
-cd security && python3 security.py
+cd AFix4server && python3 security.py
