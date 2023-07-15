@@ -10,5 +10,5 @@ This script will automatically do the following:
 
 installation:
 
-git clone https://github.com/DolatHost/AFix4server.git
+git clone https://github.com/DolatHost/UFO.git
 cd AFix4server && python3 security.py
